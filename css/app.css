@@ -1,0 +1,1279 @@
+.dn {
+  display: none;
+}
+img {
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+input,
+select {
+  outline: none;
+  background: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+div {
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img[src=""] {
+  display: none;
+}
+/*====== 建议body给稿子底色背景 ==============*/
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  background: #e6cf81;
+}
+.pg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.shu {
+  transform: translate(-290px, 290px) rotate(90deg);
+  width: 100vh;
+  height: 100vw;
+}
+/* 横屏提示 开始 */
+.load .load-img {
+  position: absolute;
+  left: 50%;
+  margin-left: -8.46666667vw;
+  top: 25%;
+  width: 16.93333333vw;
+  height: 16.93333333vw;
+}
+.load .load-img .h-1 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 7.2vw;
+  height: 14.8vw;
+}
+.load .load-img .h-2 {
+  position: absolute;
+  right: 1.33333333vw;
+  top: 1.33333333vw;
+  width: 4.4vw;
+  height: 6.8vw;
+}
+.load .load-img .h-3 {
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+  width: 15.2vw;
+  height: 7.6vw;
+  transform-origin: left center;
+  animation: load 2s linear infinite;
+}
+.load .h-4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -11.46666667vw;
+  top: 60%;
+  width: 22.93333333vw;
+  height: 9.2vw;
+}
+/* 横屏提示 结束 */
+/* 内容 开始 */
+.loading,
+.bottle,
+.bottle-box,
+.make,
+.make-box,
+.stepOne,
+.stepOne-box,
+.stepTwo,
+.stepTwo-box,
+.stepThree,
+.stepThree-box,
+.stepFour,
+.stepFour-box,
+.taste,
+.taste-inner,
+.video,
+.video-inner {
+  position: absolute;
+  left: 50%;
+  margin-left: -96.53333333vw;
+  top: 0;
+  width: 193.06666667vw;
+  height: 100vw;
+}
+/* load 开始 */
+.loading {
+  z-index: 10;
+}
+.loading .load-box {
+  position: absolute;
+  left: 50%;
+  margin-left: -96.53333333vw;
+  top: 0;
+  width: 193.06666667vw;
+  height: 100vw;
+}
+.loading .load-top {
+  position: absolute;
+  left: 50%;
+  margin-left: -8.8vw;
+  top: 8vw;
+  width: 17.6vw;
+  height: 30.26666667vw;
+}
+.loading .load-top .lad-1 {
+  width: 12.93333333vw;
+  height: 29.86666667vw;
+}
+.loading .load-top .lad-2 {
+  position: absolute;
+  right: 0vw;
+  top: 8.66666667vw;
+  width: 5.06666667vw;
+  height: 13.86666667vw;
+}
+.loading .load-ren {
+  position: absolute;
+  left: 50%;
+  margin-left: -52vw;
+  top: 43.86666667vw;
+  width: 104vw;
+  height: 19.73333333vw;
+}
+.loading .load-ren .lad1-1 {
+  position: absolute;
+  left: 2.66666667vw;
+  bottom: 0.66666667vw;
+  width: 13.6vw;
+  height: 16vw;
+  opacity: 0;
+}
+.loading .load-ren .lad1-2 {
+  position: absolute;
+  left: 22.66666667vw;
+  bottom: 0vw;
+  width: 11.46666667vw;
+  height: 24vw;
+  opacity: 0;
+}
+.loading .load-ren .lad1-3 {
+  position: absolute;
+  left: 45.06666667vw;
+  bottom: 0vw;
+  width: 14.8vw;
+  height: 19.46666667vw;
+  opacity: 0;
+}
+.loading .load-ren .lad1-4 {
+  position: absolute;
+  left: 70.13333333vw;
+  bottom: 0vw;
+  width: 14.4vw;
+  height: 17.33333333vw;
+  opacity: 0;
+}
+.loading .load-ren .lad1-5 {
+  position: absolute;
+  left: 92.66666667vw;
+  bottom: 0vw;
+  width: 8.4vw;
+  height: 17.46666667vw;
+  opacity: 0;
+}
+.loading .load-ren .show {
+  opacity: 1;
+}
+.loading .load-percentage {
+  position: absolute;
+  left: 50%;
+  margin-left: -6.66666667vw;
+  top: 66.93333333vw;
+  width: 13.33333333vw;
+  height: 3.06666667vw;
+}
+.loading .load-one,
+.loading .load-two,
+.loading .load-three {
+  display: none;
+  float: left;
+  position: relative;
+  top: 0;
+  width: 2.66666667vw;
+  height: 3.06666667vw;
+  background: url(../img/lad_5.png) no-repeat 0 0;
+  background-size: 26.66666667vw 3.06666667vw;
+}
+.loading .load-three {
+  display: block;
+}
+.loading .lad-4 {
+  float: left;
+  position: relative;
+  width: 2.26666667vw;
+  height: 3.06666667vw;
+  margin-left: 1.33333333vw;
+}
+.loading .load-line {
+  position: absolute;
+  left: 50%;
+  margin-left: -52vw;
+  top: 76.8vw;
+  width: 104vw;
+  height: 0.26666667vw;
+  background-color: #fff;
+}
+.loading .load-line .load-pre {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 0vw;
+  height: 0.26666667vw;
+  background-color: #000;
+}
+.loading .lad-3 {
+  position: absolute;
+  left: 50%;
+  margin-left: -5.66666667vw;
+  top: 81.46666667vw;
+  width: 11.33333333vw;
+  height: 12vw;
+}
+/* load 结束 */
+/* bottle 开始 */
+.bottle .p1-1 {
+  position: absolute;
+  left: 50%;
+  margin-left: -22.06666667vw;
+  top: 23.86666667vw;
+  width: 44.13333333vw;
+  height: 5.06666667vw;
+}
+.bottle .shake-box {
+  position: absolute;
+  left: 50%;
+  margin-left: -16.73333333vw;
+  top: 26.26666667vw;
+  width: 33.46666667vw;
+  height: 16.4vw;
+  transform: scale(0.5);
+}
+.bottle .shake-box .p1-4 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 33.46666667vw;
+  height: 16.4vw;
+}
+.bottle .shake-box .p1-4-1 {
+  position: absolute;
+  left: 11.46666667vw;
+  top: 6.53333333vw;
+  width: 10.13333333vw;
+  height: 10.13333333vw;
+}
+.bottle .p1-3 {
+  position: absolute;
+  left: 50%;
+  margin-left: -13.6vw;
+  top: 56vw;
+  width: 27.2vw;
+  height: 37.86666667vw;
+}
+.bottle .smell {
+  position: absolute;
+  left: 50%;
+  margin-left: -51.13333333vw;
+  top: 47.46666667vw;
+  margin-left: -34.66666667vw;
+  width: 102.26666667vw;
+  height: 52.53333333vw;
+}
+.bottle .smell .p1-9 {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  width: 102.26666667vw;
+  height: 52.53333333vw;
+  opacity: 0;
+}
+.bottle .p1-2 {
+  position: absolute;
+  left: 50%;
+  margin-left: -7.46666667vw;
+  top: 40vw;
+  width: 14.93333333vw;
+  height: 18vw;
+}
+.bottle .p1-5 {
+  width: 33.86666667vw;
+  height: 51.2vw;
+  transform: translate(-14vw, -18.13333333vw) rotate(-72deg);
+}
+.bottle .p1-6 {
+  position: absolute;
+  left: 50%;
+  margin-left: -17vw;
+  top: 63.33333333vw;
+  width: 34vw;
+  height: 30.66666667vw;
+  transform: translate(-5.6vw, -4.93333333vw) rotate(-72deg);
+}
+.bottle .p1-7 {
+  position: absolute;
+  left: 50%;
+  margin-left: -20.73333333vw;
+  top: 58.4vw;
+  width: 41.46666667vw;
+  height: 38vw;
+  transform: translate(-5.6vw, -4.93333333vw) rotate(-72deg);
+}
+.bottle .p1-8 {
+  position: absolute;
+  left: 50%;
+  margin-left: -26.33333333vw;
+  top: 66.66666667vw;
+  margin-left: -20vw;
+  width: 52.66666667vw;
+  height: 22vw;
+  transform: translate(-5.6vw, -4.93333333vw) rotate(-72deg);
+}
+/* bottle 结束 */
+/* make 开始 */
+.make .p2-1,
+.make .p2-2,
+.make .p2-3 {
+  position: absolute;
+  left: 38.53333333vw;
+  top: 38.4vw;
+  width: 32.13333333vw;
+  height: 32.13333333vw;
+}
+.make .p2-2 {
+  position: absolute;
+  left: 78.26666667vw;
+  top: 25.46666667vw;
+}
+.make .p2-3 {
+  position: absolute;
+  left: 117.6vw;
+  top: 38.4vw;
+}
+.make .make-inner {
+  position: absolute;
+  left: 50%;
+  margin-left: -32.33333333vw;
+  top: 77.33333333vw;
+  width: 64.66666667vw;
+  height: 18.4vw;
+}
+.make .make-btn {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 64.66666667vw;
+  height: 14.8vw;
+}
+.make .p2-5 {
+  width: 64.66666667vw;
+  height: 14.8vw;
+}
+.make .p2-4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -30.46666667vw;
+  bottom: 0;
+  width: 60.93333333vw;
+  height: 3.86666667vw;
+}
+/* make 结束 */
+/* 第一步 开始 */
+.stepOne .title {
+  position: absolute;
+  left: 21.33333333vw;
+  top: 25.33333333vw;
+  width: 24vw;
+  height: 54.66666667vw;
+}
+.stepOne .title .p3-2 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 12.53333333vw;
+  height: 54.26666667vw;
+}
+.stepOne .title .p3-1 {
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  width: 9.73333333vw;
+  height: 41.46666667vw;
+}
+.stepOne .weigh {
+  position: absolute;
+  left: 50%;
+  margin-left: -31.86666667vw;
+  top: 0;
+  width: 63.73333333vw;
+  height: 87.46666667vw;
+  overflow: hidden;
+}
+.stepOne .weigh .p3-11,
+.stepOne .weigh .p3-12 {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  width: 63.73333333vw;
+  height: 35.33333333vw;
+}
+.stepOne .weigh .p3-12 {
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
+.stepOne .weigh .p3-3 {
+  position: absolute;
+  left: 50%;
+  margin-left: -9.13333333vw;
+  top: 0;
+  margin-left: -18.26666667vw;
+  width: 18.26666667vw;
+  height: 79.46666667vw;
+}
+.stepOne .weigh .p3-3-1 {
+  position: absolute;
+  left: 50%;
+  margin-left: -9.4vw;
+  top: 0;
+  margin-left: 0;
+  width: 18.8vw;
+  height: 79.73333333vw;
+}
+.stepOne .measure {
+  position: absolute;
+  left: 127.33333333vw;
+  top: 25.06666667vw;
+  width: 5.46666667vw;
+  height: 34.13333333vw;
+  overflow: hidden;
+}
+.stepOne .measure .p3-4 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 5.46666667vw;
+  height: 34.13333333vw;
+}
+.stepOne .measure .measure-inner {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  width: 5.46666667vw;
+  height: 0vw;
+  transition: all 0.3s ease-in;
+  overflow: hidden;
+}
+.stepOne .measure .measure-inner .p3-5 {
+  width: 5.46666667vw;
+  height: 34.13333333vw;
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+}
+.stepOne .accomplish {
+  position: absolute;
+  left: 123.33333333vw;
+  top: 60.13333333vw;
+  width: 19.33333333vw;
+  height: 19.33333333vw;
+}
+.stepOne .accomplish .plan {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 24vw;
+  height: 3.46666667vw;
+}
+.stepOne .accomplish .plan .hj-1 {
+  position: relative;
+  float: left;
+  width: 9.46666667vw;
+  height: 3.46666667vw;
+}
+.stepOne .accomplish .plan .plan-one,
+.stepOne .accomplish .plan .plan-two,
+.stepOne .accomplish .plan .plan-three {
+  display: none;
+  float: left;
+  position: relative;
+  top: 0;
+  width: 2.66666667vw;
+  height: 3.06666667vw;
+  background: url(../img/lad_5.png) no-repeat 0 0;
+  background-size: 26.66666667vw 3.06666667vw;
+}
+.stepOne .accomplish .plan .plan-three {
+  display: block;
+}
+.stepOne .accomplish .lad-4 {
+  position: relative;
+  float: left;
+  width: 2.26666667vw;
+  height: 3.06666667vw;
+}
+.stepOne .accomplish .p3-7 {
+  position: absolute;
+  left: 50%;
+  margin-left: -4.26666667vw;
+  top: 6.66666667vw;
+  margin-left: -6.66666667vw;
+  width: 8.53333333vw;
+  height: 1.86666667vw;
+}
+.stepOne .accomplish .p3-8 {
+  position: absolute;
+  right: 6.66666667vw;
+  bottom: 0vw;
+  width: 8vw;
+  height: 9.6vw;
+}
+.stepOne .hint {
+  position: absolute;
+  left: 50%;
+  margin-left: -15.53333333vw;
+  top: 70.26666667vw;
+  width: 31.06666667vw;
+  height: 14vw;
+  display: none;
+}
+.stepOne .hint .p5-17 {
+  position: absolute;
+  left: 50%;
+  margin-left: -3.6vw;
+  top: 0;
+  width: 7.2vw;
+  height: 9.33333333vw;
+}
+.stepOne .hint .p5-18 {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  width: 30.8vw;
+  height: 3.6vw;
+}
+.stepOne .move {
+  position: absolute;
+  left: 138.26666667vw;
+  top: 40.4vw;
+  width: 44vw;
+  height: 39.06666667vw;
+}
+.stepOne .move .p3-6 {
+  position: absolute;
+  left: 50%;
+  margin-left: -13.73333333vw;
+  top: 0;
+  width: 27.46666667vw;
+  height: 12.13333333vw;
+}
+.stepOne .move-btn {
+  position: absolute;
+  left: 135.73333333vw;
+  top: 52.26666667vw;
+  width: 44vw;
+  height: 36.13333333vw;
+}
+.stepOne .move-btn .p3-9 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 44vw;
+  height: 36.13333333vw;
+}
+.stepOne .next-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -19.86666667vw;
+  top: 88.93333333vw;
+  width: 39.73333333vw;
+  height: 6.26666667vw;
+}
+.stepOne .next-btn .p3-10 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 39.73333333vw;
+  height: 6.26666667vw;
+}
+/* 第一步 结束 */
+/* 第二步 开始 */
+.stepTwo .stepTwo-box {
+  transform: translate(13.33333333vw, 0);
+}
+.stepTwo .title {
+  position: absolute;
+  left: 4.8vw;
+  top: 23.2vw;
+  width: 24.13333333vw;
+  height: 56.93333333vw;
+}
+.stepTwo .title .p4-2 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 12.53333333vw;
+  height: 56.53333333vw;
+}
+.stepTwo .title .p4-1 {
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  width: 9.73333333vw;
+  height: 53.6vw;
+}
+.stepTwo .move-l {
+  position: absolute;
+  left: 29.6vw;
+  top: 32.8vw;
+  width: 30.26666667vw;
+  height: 31.2vw;
+}
+.stepTwo .move-l .p4-10 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 30.26666667vw;
+  height: 31.2vw;
+}
+.stepTwo .move-r {
+  position: absolute;
+  left: 66.4vw;
+  top: 32.8vw;
+  width: 32.13333333vw;
+  height: 33.33333333vw;
+}
+.stepTwo .move-r .p4-11 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 32.13333333vw;
+  height: 33.33333333vw;
+}
+.stepTwo .p4-9 {
+  position: absolute;
+  left: 44.8vw;
+  top: 29.06666667vw;
+  width: 34.8vw;
+  height: 36.13333333vw;
+}
+.stepTwo .move-c {
+  position: absolute;
+  left: 38.8vw;
+  top: 23.46666667vw;
+  width: 46.4vw;
+  height: 47.6vw;
+  z-index: 10;
+}
+.stepTwo .move-c .p4-9-1 {
+  width: 46.4vw;
+  height: 47.6vw;
+}
+.stepTwo .two-first .tips {
+  position: absolute;
+  left: 50.53333333vw;
+  top: 16.93333333vw;
+  width: 30.93333333vw;
+  height: 12.26666667vw;
+}
+.stepTwo .two-first .tips .p4-12 {
+  width: 30.93333333vw;
+  height: 12.26666667vw;
+}
+.stepTwo .two-first .hint {
+  position: absolute;
+  left: 62.53333333vw;
+  top: 60vw;
+  width: 15.33333333vw;
+  height: 8.8vw;
+  z-index: 20;
+}
+.stepTwo .two-first .hint .p5-12 {
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+  width: 11.06666667vw;
+  height: 7.6vw;
+}
+.stepTwo .two-first .hint .p5-13 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 6vw;
+  height: 6.8vw;
+}
+.stepTwo .two-second .tips {
+  position: absolute;
+  left: 37.33333333vw;
+  top: 55.2vw;
+  width: 42.66666667vw;
+  height: 11.73333333vw;
+}
+.stepTwo .two-second .tips .p4-6 {
+  width: 42.66666667vw;
+  height: 11.73333333vw;
+}
+.stepTwo .two-second .hint {
+  position: absolute;
+  left: 72.8vw;
+  top: 67.2vw;
+  width: 8.53333333vw;
+  height: 14.4vw;
+  z-index: 20;
+}
+.stepTwo .two-second .hint .p4-7 {
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  width: 8.13333333vw;
+  height: 4.13333333vw;
+}
+.stepTwo .two-second .hint .p4-8 {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  width: 7.06666667vw;
+  height: 10.8vw;
+}
+.stepTwo .move-con {
+  position: absolute;
+  left: 37.2vw;
+  top: 66.53333333vw;
+  width: 33.73333333vw;
+  height: 22.66666667vw;
+  z-index: 10;
+}
+.stepTwo .move-con .p4-5 {
+  width: 33.73333333vw;
+  height: 22.66666667vw;
+}
+.stepTwo .move-con .p4-5-1 {
+  position: absolute;
+  left: -6.26666667vw;
+  top: -5.6vw;
+  width: 44.53333333vw;
+  height: 33.86666667vw;
+  display: none;
+}
+.stepTwo .move-con .p4-4 {
+  position: absolute;
+  left: 8.93333333vw;
+  top: 3.46666667vw;
+  width: 16.93333333vw;
+  height: 15.86666667vw;
+  display: none;
+}
+.stepTwo .s-t-box {
+  position: absolute;
+  left: 80.8vw;
+  top: 0vw;
+  width: 79.06666667vw;
+  height: 100vw;
+}
+.stepTwo .s-t-box .p4-13 {
+  position: absolute;
+  left: 0vw;
+  top: 59.73333333vw;
+  width: 79.06666667vw;
+  height: 53.33333333vw;
+}
+.stepTwo .s-t-box .p4-17 {
+  position: absolute;
+  left: 0vw;
+  top: 52.53333333vw;
+  width: 79.06666667vw;
+  height: 53.33333333vw;
+  opacity: 0;
+}
+.stepTwo .s-t-box .p4-14 {
+  position: absolute;
+  left: 0.66666667vw;
+  top: -26.66666667vw;
+  width: 106.66666667vw;
+  height: 63.6vw;
+  transition: all 0.5s ease;
+}
+.stepTwo .s-t-box .p4-15 {
+  position: absolute;
+  left: -12.66666667vw;
+  top: -1.86666667vw;
+  width: 124.8vw;
+  height: 82.66666667vw;
+  opacity: 0;
+}
+.stepTwo .s-t-box .p4-16 {
+  position: absolute;
+  left: -23.33333333vw;
+  top: -2.66666667vw;
+  width: 97.33333333vw;
+  height: 74.66666667vw;
+  opacity: 0;
+}
+.stepTwo .next-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -19.86666667vw;
+  top: 90.26666667vw;
+  width: 39.73333333vw;
+  height: 6.26666667vw;
+}
+.stepTwo .next-btn .p4-3 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 39.73333333vw;
+  height: 6.26666667vw;
+}
+/* 第二步 结束 */
+/* 第三步 开始 */
+.stepThree .title {
+  position: absolute;
+  left: 27.33333333vw;
+  top: 30vw;
+  width: 23.73333333vw;
+  height: 50.93333333vw;
+}
+.stepThree .title .p5-2 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 12.26666667vw;
+  height: 50.66666667vw;
+}
+.stepThree .title .p5-1 {
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  width: 9.73333333vw;
+  height: 42.26666667vw;
+}
+.stepThree .wine-box {
+  position: absolute;
+  left: 81.73333333vw;
+  top: 19.46666667vw;
+  width: 26.53333333vw;
+  height: 66.66666667vw;
+}
+.stepThree .wine-box .p5-11 {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  width: 26.53333333vw;
+  height: 63.2vw;
+}
+.stepThree .wine-box .p5-10 {
+  position: absolute;
+  left: 7.2vw;
+  top: 0vw;
+  width: 11.06666667vw;
+  height: 8.8vw;
+}
+.stepThree .wine-box .p5-11-2 {
+  position: absolute;
+  left: 8.8vw;
+  top: 35.46666667vw;
+  width: 10vw;
+  height: 14.8vw;
+}
+.stepThree .p5-6 {
+  position: absolute;
+  left: 122.4vw;
+  top: 19.46666667vw;
+  width: 26.93333333vw;
+  height: 12vw;
+}
+.stepThree .three-second {
+  display: none;
+}
+.stepThree .three-second .p5-7 {
+  position: absolute;
+  left: 128vw;
+  top: 21.6vw;
+  width: 29.6vw;
+  height: 20.66666667vw;
+}
+.stepThree .three-second .hint {
+  position: absolute;
+  left: 78vw;
+  top: 29.06666667vw;
+  width: 12.26666667vw;
+  height: 8.93333333vw;
+  z-index: 10;
+}
+.stepThree .three-second .hint .p5-8 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 12.26666667vw;
+  height: 1.06666667vw;
+}
+.stepThree .three-second .hint .p5-9 {
+  position: absolute;
+  left: 4.8vw;
+  top: 0vw;
+  width: 4.53333333vw;
+  height: 6.8vw;
+}
+.stepThree .s-h-move {
+  position: absolute;
+  left: 122.4vw;
+  top: 30vw;
+  width: 22.66666667vw;
+  height: 59.73333333vw;
+}
+.stepThree .s-h-move .p5-16 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 22.66666667vw;
+  height: 59.73333333vw;
+}
+.stepThree .s-h-move1 {
+  position: absolute;
+  left: 81.73333333vw;
+  top: 22.13333333vw;
+  width: 22.66666667vw;
+  height: 59.73333333vw;
+}
+.stepThree .s-h-move1 .p5-16 {
+  animation: none;
+}
+.stepThree .next-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -23.8vw;
+  top: 87.73333333vw;
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+.stepThree .next-btn .p5-15 {
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+/* 第三步 结束 */
+/* 第四步 开始 */
+.stepFour .p5-bg {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  display: none;
+}
+.stepFour .title {
+  position: absolute;
+  left: 106.66666667vw;
+  top: 22.4vw;
+  width: 23.2vw;
+  height: 12.53333333vw;
+}
+.stepFour .title .p5-5 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 23.2vw;
+  height: 12.53333333vw;
+}
+.stepFour .hint {
+  position: absolute;
+  left: 70.8vw;
+  top: 25.06666667vw;
+  width: 10.4vw;
+  height: 9.2vw;
+  z-index: 10;
+}
+.stepFour .hint .p5-3 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 7.06666667vw;
+  height: 1.73333333vw;
+}
+.stepFour .hint .p5-4 {
+  position: absolute;
+  right: 0vw;
+  bottom: 0vw;
+  width: 7.2vw;
+  height: 7.86666667vw;
+}
+.stepFour .s-f-wine {
+  position: absolute;
+  left: 50%;
+  margin-left: -12vw;
+  top: 23.73333333vw;
+  width: 24vw;
+  height: 60vw;
+}
+.stepFour .s-f-wine .p5-11 {
+  position: absolute;
+  left: 0vw;
+  bottom: 0vw;
+  width: 24vw;
+  height: 56.8vw;
+}
+.stepFour .s-f-wine .lid {
+  position: absolute;
+  left: 5.33333333vw;
+  top: 0vw;
+  width: 11.06666667vw;
+  height: 8.8vw;
+}
+.stepFour .s-f-wine .lid .p5-10 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 11.06666667vw;
+  height: 8.8vw;
+  transform: scale(0.7);
+}
+.stepFour .next-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -29.93333333vw;
+  top: 86.53333333vw;
+  width: 59.86666667vw;
+  height: 11.46666667vw;
+}
+.stepFour .next-btn .p5-14 {
+  width: 59.86666667vw;
+  height: 11.46666667vw;
+}
+/* 第四步 结束 */
+/* taste 开始 */
+.taste .p7-11 {
+  left: 50%;
+  margin-left: -85.4vw;
+  position: absolute;
+  top: 50%;
+  margin-top: -39.66666667vw;
+  width: 170.8vw;
+  height: 79.33333333vw;
+}
+.taste .p7-1 {
+  position: absolute;
+  left: 14.66666667vw;
+  top: 15.33333333vw;
+  width: 19.33333333vw;
+  height: 22.4vw;
+}
+.taste .p7-3 {
+  position: absolute;
+  right: 14.66666667vw;
+  top: 15.33333333vw;
+  width: 19.33333333vw;
+  height: 22.4vw;
+}
+.taste .taste-cen {
+  position: absolute;
+  left: 50%;
+  margin-left: -34.66666667vw;
+  top: 19.33333333vw;
+  width: 69.33333333vw;
+  height: 45.86666667vw;
+}
+.taste .taste-cen .p7-2 {
+  position: absolute;
+  left: 50%;
+  margin-left: -23.73333333vw;
+  top: 0;
+  width: 47.46666667vw;
+  height: 36.4vw;
+}
+.taste .taste-cen .p7-4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -70.13333333vw;
+  top: 0;
+  width: 140.26666667vw;
+  height: 48.4vw;
+}
+.taste .left-btn {
+  position: absolute;
+  left: 14.66666667vw;
+  top: 76.66666667vw;
+  width: 54.26666667vw;
+  height: 11.46666667vw;
+}
+.taste .left-btn .p7-9 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 54.26666667vw;
+  height: 11.46666667vw;
+}
+.taste .right-btn {
+  position: absolute;
+  right: 14.66666667vw;
+  top: 76.66666667vw;
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+.taste .right-btn .p7-10 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+/* stick 结束 */
+/* video 开始 */
+.video .video-inner {
+  transform: translate(9.33333333vw, 0);
+}
+.video .p6-8 {
+  position: absolute;
+  left: 50%;
+  margin-left: -96.53333333vw;
+  top: 42.66666667vw;
+  width: 193.06666667vw;
+  height: 41.06666667vw;
+}
+.video .title {
+  position: absolute;
+  left: 7.33333333vw;
+  top: 30.93333333vw;
+  width: 25.06666667vw;
+  height: 42.53333333vw;
+}
+.video .title .p6-1 {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 18.26666667vw;
+  height: 42.26666667vw;
+}
+.video .title .p6-2 {
+  position: absolute;
+  right: 0vw;
+  top: 12vw;
+  width: 6.93333333vw;
+  height: 20.13333333vw;
+}
+.video .video-box {
+  position: absolute;
+  left: 35.6vw;
+  top: 20.8vw;
+  width: 135.73333333vw;
+  height: 56.66666667vw;
+}
+.video .video-box .river,
+.video .video-box .person,
+.video .video-box .young,
+.video .video-box .ballet,
+.video .video-box .power {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 28.93333333vw;
+  height: 28.93333333vw;
+}
+.video .video-box .person {
+  position: absolute;
+  left: 54.93333333vw;
+  top: 0vw;
+}
+.video .video-box .young {
+  position: absolute;
+  left: 106.66666667vw;
+  top: 0vw;
+}
+.video .video-box .ballet {
+  position: absolute;
+  left: 26.4vw;
+  top: 27.6vw;
+}
+.video .video-box .power {
+  position: absolute;
+  left: 82vw;
+  top: 27.6vw;
+}
+.video .video-box .p6-4,
+.video .video-box .p6-5,
+.video .video-box .p6-6,
+.video .video-box .p6-7,
+.video .video-box .p6-3 {
+  opacity: 0;
+  width: 28.93333333vw;
+  height: 28.93333333vw;
+}
+.video .video-btn {
+  position: absolute;
+  left: 50%;
+  margin-left: -50vw;
+  top: 81.86666667vw;
+  width: 100vw;
+  height: 11.46666667vw;
+}
+.video .video-btn .see-btn {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+.video .video-btn .see-btn .p6-9 {
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+.video .video-btn .share-btn {
+  position: absolute;
+  right: 0vw;
+  top: 0vw;
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+.video .video-btn .p8-1 {
+  width: 47.6vw;
+  height: 11.46666667vw;
+}
+.video .p6-10 {
+  position: absolute;
+  left: 50%;
+  margin-left: -45.06666667vw;
+  top: 93.2vw;
+  width: 90.13333333vw;
+  height: 2.8vw;
+}
+.video .share-layer {
+  position: absolute;
+  left: 0vw;
+  top: 0vw;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+.video .share-layer .share {
+  position: absolute;
+  left: 50%;
+  margin-left: -96.53333333vw;
+  top: 0;
+  width: 193.06666667vw;
+  height: 100vw;
+}
+.video .share-layer .p8-2 {
+  position: absolute;
+  left: 12.8vw;
+  top: 5.33333333vw;
+  width: 38.8vw;
+  height: 50.13333333vw;
+  transform: rotate(-90deg);
+}
+/* video 结束 */
+/* 内容 结束 */

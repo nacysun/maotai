@@ -1,0 +1,549 @@
+@screenWidth: 750;
+@vw : (@screenWidth/100vw);
+
+/* bottle */
+.first .p1-bg{
+    animation: scaleBg 2s ease-in forwards .5s;
+}
+.first .bottle-box{
+    animation: scaleIn 2s ease-in forwards .5s;
+}
+.p1-4-1{
+    animation: dong 1.5s ease-out infinite;
+}
+ .second .bottle-box {
+    animation: moveUp 2s ease-out forwards;
+}
+
+.second .p1-bg {
+    animation: bgMoveUp 2s ease-out forwards;
+}
+
+ .second .p1-3 {
+    animation: platMove 2s ease-in forwards;
+}
+
+ .second .animte-box {
+    animation: boxMove 2s ease-in forwards;
+}
+
+ .second .all-aniamte {
+    animation: allboxMove 15000s linear forwards;
+}
+.third .p1-9{
+    animation: smell 10s ease-out forwards;
+}
+
+/* make */
+.p2-1{
+    animation: makeBox 3s infinite ease-in-out alternate .4s;
+}
+.p2-2{
+    animation: makeBox 3s infinite ease-in-out alternate;
+}
+.p2-3{
+    animation: makeBox 3s infinite ease-in-out alternate .8s;
+}
+
+.p2-5,.p6-9,.p8-1 {
+    animation: btn 4s infinite;
+}
+
+/* stepOne */
+.p3-8{
+    animation: p3_8 2s ease-out infinite;
+}
+
+.p3-9 {
+    animation: p3_9 2s ease-out infinite;
+}
+
+.p5-17 {
+    animation: p5_17 2s ease-out infinite;
+}
+
+.cai-left {
+    animation: cai .4s ease-in;
+}
+
+.cai-right {
+    animation: cai .4s ease-in .3s;
+}
+
+.p3-1,
+.p4-1,
+.p5-1 {
+    opacity: 0;
+    animation: fadeInDown 1s ease-out both;
+}
+
+.p3-2,
+.p4-2,
+.p5-2 {
+    opacity: 0;
+    animation: fadeInLeft 1s ease-out both;
+}
+.fog .fog_one {
+    animation: p14_5 10s linear infinite 1s;
+}
+
+.dao .p4-5-1 {
+    animation: p4_5_1 .7s ease-out 1.1s;
+}
+
+.dao .p4-4 {
+    animation: p4_4 .7s ease-out forwards 1.1s;
+}
+
+.p5-12 {
+    animation: p5_12 2s ease-out infinite;
+}
+.p4-9-1 {
+    animation: p3_9 2s ease-out infinite;
+}
+.move-bj {
+    animation: move_bj 3s ease-out;
+}
+
+.next .p3-10,
+.next .p4-3,
+.next .p5-15 {
+    animation: btn 4s infinite;
+}
+
+.p5-11-2 {
+    animation: flash 3s ease-out infinite;
+}
+
+.p5-16 {
+    animation: p3_9 2s ease-out infinite;
+}
+
+.taste .s-f-wine {
+    animation: wine 5s ease-in forwards .5s;
+}
+
+.taste .wine-lid {
+    animation: openWine 3s ease forwards;
+}
+
+.p5-4 {
+    animation: p3_8 2s ease-out infinite;
+}
+
+.p7-9 {
+    animation: p7_9 2s ease-out infinite 1.5s;
+}
+
+.p7-10 {
+    animation: p7_10 2s ease-out infinite 1.5s;
+}
+
+.p6-8 {
+    animation: p6_8 2.2s linear forwards;
+}
+
+.p6-3 {
+    animation: video_up 1.5s both;
+}
+
+.p6-5 {
+    animation: video_up 1.8s both .2s;
+}
+
+.p6-7 {
+    animation: video_up 1.8s both .4s;
+}
+
+.p6-4 {
+    animation: video_up 1.8s both .6s;
+}
+
+.p6-6 {
+    animation: video_up 1.8s both .6s;
+}
+
+
+@keyframes load {
+    0% {
+        transform: translate((15/@vw), (15/@vw)) rotate(-90deg);
+    }
+    50% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    60% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    90% {
+        transform: translate((15/@vw), (15/@vw)) rotate(-90deg);
+    }
+    100% {
+        transform: translate((15/@vw), (15/@vw)) rotate(-90deg);
+    }
+}
+@keyframes scaleBg{
+    0%{
+        transform: scale(1) translate(0, 0);
+        filter: blur(0px);
+    }
+    100%{
+        transform: scale(2) translate(0, (60/@vw));
+        filter: blur(3px);
+
+    }
+}
+@keyframes bgMoveUp{
+    0%{
+        transform: scale(2) translate(0, (60/@vw));
+        filter: blur(0px);
+    }
+    100%{
+        transform: scale(2) translate(0, (-190/@vw));
+        filter: blur(3px);
+
+    }
+}
+@keyframes scaleIn{
+    0%{
+        transform: scale(1) translate(0,0);
+    }
+    100%{
+        transform: scale(2) translate(0, (60/@vw));
+    }
+}
+@keyframes dong{
+    0%,100%{
+        transform: translate3d(0, 0, 0);
+    }
+    20%,60%{
+        transform: translate3d(-15%, 0, 0);
+    }
+    40%,80%{
+        transform: translate3d(15%, 0, 0);
+    }
+}
+@keyframes moveUp{
+    0%{
+        transform: scale(2) translate(0, (60/@vw));
+    }
+    100%{
+        transform: scale(2) translate(0, (-190/@vw));
+    }
+}
+@keyframes platMove{
+    0%{
+        transform: translate(0, 0) rotate(0deg);
+    }
+    100%{
+        transform: translate(0, (40/@vw)) rotate(0deg);
+
+    }
+}
+@keyframes boxMove{
+    0%{
+        transform: translate((-105/@vw), (-136/@vw)) scale(0.5) rotate(-72deg);
+    }
+    100%{
+        transform: translate((-60/@vw), (125/@vw)) scale(0.5) rotate(0deg);
+    }
+}
+@keyframes allboxMove{
+    0%{
+        transform: translate((-60/@vw), (125/@vw)) scale(0.5) rotate(0deg);
+    }
+    100%{
+        transform: translate((-105/@vw), (-136/@vw)) scale(0.5) rotate(-72deg);
+    }
+}
+
+@keyframes smell {
+    0% {
+        opacity: 0.2;
+        transform: translate((-85/@vw), (80/@vw)) scale(0.3);
+    }
+    30% {
+        opacity: 0.5;
+    }
+    70% {
+        opacity: 0.3;
+    }
+    90% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0.2;
+        transform: translate((70/@vw), (-94/@vw)) scale(1.5);
+    }
+}
+
+@keyframes makeBox{
+    0%{
+        transform: translate(0, 0);
+    }
+    50%{
+        transform: translate(0, (-20/@vw));
+    }
+    100%{
+        transform: translate(0, (10/@vw));
+    }
+}
+
+@keyframes btn {
+    0%,100% {
+        transform: scale(1);
+    }
+    20%,
+    60%{
+        transform: scale(.95);
+        opacity: 0.7;
+    }
+    40%,
+    80% {
+        transform: scale(1.05);
+        opacity: 1;
+    }
+}
+
+@keyframes p3_8 {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        opacity: 0.4;
+        transform: translate3d(30%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes p3_9 {
+    0%,100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.6;
+    }
+}
+
+@keyframes p5_17 {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.6;
+        -webkit-transform: scale(0.85);
+        transform: scale(0.85);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@keyframes cai {
+    0%,100% {
+        transform: translate3d(0, 0, 0);
+    }
+    50% {
+        transform: translate3d(0, -25%, 0);
+    }
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, -100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes p4_5_1 {
+    0%,100% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(45deg);
+    }
+}
+
+@keyframes p4_4 {
+    0% {
+        transform: translate(0, 0);
+    }
+    99% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: translate((90/@vw), (32/@vw));
+    }
+}
+
+
+@keyframes p5_12 {
+    0% {
+        transform: translate3d(0%, 0%, 0);
+    }
+    50% {
+        opacity: 0.4;
+        transform: translate3d(0%, 30%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate3d(0%, 0%, 0);
+    }
+}
+
+@keyframes move_bj {
+    0%,100% {
+        transform: translate3d(0, 0%, 0);
+    }
+    30%,65% {
+        transform: translate3d((488/@vw), (-236/@vw), 0);
+    }
+}
+
+@keyframes p7_9 {
+    0%,50%,100% {
+        transform: translate(0px, 0px);
+    }
+    20%,
+    60% {
+        transform: translate(-5px, 0px);
+    }
+    40%,
+    80% {
+        transform: translate(10px, 0px);
+    }
+}
+
+
+@keyframes p7_10 {
+    0%,50%,100% {
+        transform: translate(0px, 0px);
+    }
+    20%,
+    60% {
+        transform: translate(5px, 0px);
+    }
+    40%,
+    80% {
+        transform: translate(-10px, 0px);
+    }
+}
+@keyframes p6_8 {
+    0% {
+        opacity: 0;
+        transform: translate(0, (80/@vw));
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+
+@keyframes video_up {
+    0% {
+        transform: translateY((-500/@vw));
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38%,100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY((-65/@vw));
+        animation-timing-function: ease-in;
+    }
+    72%,90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: translateY((-28/@vw));
+    }
+    95% {
+        transform: translateY(-(8/@vw));
+        animation-timing-function: ease-in;
+    }
+}
+@keyframes flash {
+    0%,100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.1;
+    }
+}
+
+
+@keyframes wine {
+    0% {
+        transform: scale(1);
+    }
+    20% {
+        opacity: 1;
+        transform: scale(.9) translate(0, (50/@vw));
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.2) translate(0, (50/@vw));
+    }
+}
+
+
+@keyframes openWine {
+    0% {
+        transform: translate(0, 0) rotate(0deg);
+    }
+    50% {
+        opacity: 1;
+        transform: translate((-35/@vw), (-45/@vw)) rotate(-45deg);
+    }
+    100% {
+        opacity: 0;
+        transform: translate((-65/@vw), -(75/@vw)) rotate(-45deg);
+    }
+}
+
+@keyframes p14_5 {
+    0%,100% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+        transform: translate(0, -10%) scaleY(1.3);
+    }
+    50% {
+        opacity: 0.6;
+    }
+    70% {
+        opacity: 0.8;
+    }
+    99% {
+        transform: translate(0, -100%) scaleY(3);
+        opacity: 0;
+    }
+}
